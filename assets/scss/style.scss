@@ -597,7 +597,7 @@ footer {
             display: block;
             position: absolute;
             top: 20px;
-            left: 50%;
+            left: 46%;
         }
         .nav {
             display: none;
@@ -612,7 +612,7 @@ footer {
             display: block;
             position: absolute;
             top: 100px;
-            left: 53%;
+            left: 50%;
         }
         .btn-contact {
             display: inline-block;
@@ -700,12 +700,8 @@ footer {
             }
             .subscribe {
                 padding: 10px 30px;
-                font-family: DM Sans;
-                font-style: normal;
-                font-weight: 500;
                 font-size: 14px;
                 line-height: 16px;
-                position: absolute;
                 top: 26px;
                 right: 10px;
             }
@@ -735,4 +731,78 @@ footer {
             }
         }
     }
+}
+@media (max-width: 425px) {
+    .search-form {
+        max-width: 275px;
+        h6 {
+            font-size: 20px;
+            line-height: 22px;
+        }
+        p {
+            font-size: 12px;
+            line-height: 25px;
+        }
+        input[type="text"] {
+            padding: 3px 12px 3px 8px;
+            font-size: 16px;
+            background: #f1f1f1;
+            float: left;
+            color: #747da1;
+            font-size: 16px;
+        }
+        button {
+            float: left;
+            padding: 5px 6px;
+            background: #083c6e;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+        }
+    }
+    .information-block {
+        width: 320px;
+    }
+    .luxroom {
+        &:after {
+            top: 235px;
+            left: -100px;
+            z-index: -1;
+            position: absolute;
+        }
+    }
+    .support {
+        width: 320px;
+        .subscribe-form {
+            input[type="text"] {
+                padding: 15px 140px 15px 15px;
+            }
+        }
+       
+    }
+    footer {
+        .support-info {
+            li:first-child {
+                font-size: 8px;
+                line-height: 20px;
+            }
+            li {
+                font-size: 8px;
+                line-height: 10px;
+            }
+            .footer__items {
+                width: 150px;
+                p {
+                    font-size: 10px;
+                    line-height: 15px;
+                }
+                .social {
+                    .social__link {
+                        font-size: 11px;   
+                    }
+                }
+            }
+        }
+    }
+    
 }
